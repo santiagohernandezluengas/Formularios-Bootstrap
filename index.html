@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1 class="ejemplo-formulario">Ejemplo formulario</h1>
+    <div class="formulario">
+        <form action="">
+            <label for="#nombre1">Primer nombre.</label><span class="asterisco-obligatorio">*</span>
+            <input class="input-box" type="text" id="nombre1" name="nombre1" style="border: none; outline: none"
+                placeholder="Juan..." tabindex="1" required>
+            <label for="#nombre2">Segundo nombre.</label>
+            <input class="input-box" type="text" id="nombre2" name="nombre2" style="border: none; outline: none"
+                placeholder="Pepito..." tabindex="2">
+            <label for="#apellido1">Primer apellido.</label><span class="asterisco-obligatorio">*</span>
+            <input class="input-box" type="text" name="apellido1" id="apellido1" style="border: none; outline: none"
+                placeholder="Perez..." tabindex="3" required>
+            <label for="#apellido2">Segundo apellido.</label>
+            <input class="input-box" type="text" name="apellido2" id="apellido2" style="border: none; outline: none"
+                placeholder="Moyano..." tabindex="4">
+            <label for="#edad">Edad</label><span class="asterisco-obligatorio">*</span>
+            <input class="input-box" type="number" id="edad" name="edad-usu" style="border: none; outline: none;"
+                placeholder="18..." tabindex="5" required>
+            <label for="#date">Fecha de nacimiento.</label><span class="asterisco-obligatorio">*</span>
+            <input type="date" name="fecha-nacimiento" id="date" style="outline: none;" tabindex="6" required> 
+        </form> 
+    </div>
+</body>
+
+</html>

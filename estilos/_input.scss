@@ -1,0 +1,39 @@
+label {
+    color: #747474;
+    transition: $efecto;
+    body.dark & {
+        color: #3aa1cb;
+    }
+    .asterisco {
+        color: red;
+        font-size: 25px;
+        body.dark & {
+            color: blue;
+        }
+    }
+}
+input {
+    background: $blanco;
+    transition: $efecto;
+    body.dark & {
+        background: $colorTx2;
+    }
+}
+textarea {
+    background: $blanco;
+    transition: $efecto;
+    body.dark & {
+        background: $colorTx2;
+    }
+}
+select {
+    background: $blanco;
+    transition: $efecto;
+    body.dark & {
+        background: $colorTx2;
+    }
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+}

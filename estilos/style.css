@@ -1,0 +1,191 @@
+.header {
+  top: 40px;
+  width: 40%;
+  min-width: 360px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background: #d7d7d7;
+}
+
+body.dark .header {
+  background: #393939;
+  border-color: #F1F1F1;
+}
+
+.header h1 {
+  color: #323232;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark .header h1 {
+  color: #D0D0D0;
+}
+
+.switch {
+  background-color: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0px;
+  left: 0px;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: orange;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.switch.active::after {
+  right: 0px;
+  left: unset;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #F1F1F1;
+}
+
+.formulario {
+  top: 200px;
+  width: 40%;
+  min-width: 360px;
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  background: #d7d7d7;
+}
+
+body.dark .formulario {
+  background: #393939;
+  border-color: #F1F1F1;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.switch {
+  position: absolute;
+  right: 0px;
+}
+
+label {
+  color: #747474;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark label {
+  color: #3aa1cb;
+}
+
+label .asterisco {
+  color: red;
+  font-size: 25px;
+}
+
+body.dark label .asterisco {
+  color: blue;
+}
+
+input {
+  background: #F1F1F1;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark input {
+  background: #D0D0D0;
+}
+
+textarea {
+  background: #F1F1F1;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark textarea {
+  background: #D0D0D0;
+}
+
+select {
+  background: #F1F1F1;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+body.dark select {
+  background: #D0D0D0;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body {
+  background: #F1F1F1;
+  font-family: 'robot', sans-serif;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+body.dark {
+  background-color: #181818;
+}
+/*# sourceMappingURL=style.css.map */

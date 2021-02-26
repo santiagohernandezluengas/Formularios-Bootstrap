@@ -43,7 +43,7 @@
             </div>
             <div class="mb-3">
                 <!--Text area-->
-                <!--Esta area es comunmente usada para guardar informacion a la ora del registro o en diferentes ocasiones
+                <!--Esta area es comunmente usada para guardar informacion al área del registro o en diferentes ocasiones
                 gran ejemplo, en GuitHub se utiliza para guardar una breve descripcion del repositorio o proyecto-->
                 <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
@@ -84,11 +84,86 @@
                     Checkbox 4
                 </label>
             </div>
+
+             <!--Range-->
+             <!--Sirve para indicar el progreso de algo-->
+             <label for="customRange1" class="form-label">Example range</label>
+             <input type="range" class="form-range" id="customRange1">
+
+              <!--Rango bloqueado de tipo disabled-->
+              <label for="disabledRange" class="form-label">Disabled range</label>
+              <input type="range" class="form-range" id="disabledRange" disabled>
+
+             <!--Rango con valores min y mas (0 a 100) o (0 a 5)-->
+              <label for="customRange2" class="form-label">Example range</label>
+              <input type="range" class="form-range" min="0" max="5" id="customRange2">
+
+
+              <!--Grupos de entrada -->
+              <!--Son contenedores que ayudan a comprender mejor la entrada de los campos de un formulario , agregandoiconos,textos,etc-->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">$</span>
+                <input type="text" class="form-control" placeholder="Ingrese el precio del producto que desea vender" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese un correo externo de contacto" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+              
+              <label for="basic-url" class="form-label">Ingresa una URL de tu sitio web</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+
+            <!--Etiquetas de entrada -->
+              <!--Las etiquetas de entrada brindan una mejor interacción con cada campo a la hora de que el usuario vaya a ingresar un valor-->
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese Nombre y apellidos">
+                <label for="floatingInput">Nombre y Apellidos</label>
+                </div>
+               <!--Etiquetas de entrada con validación de datos-->
+                <form class="form-floating">
+                    <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+                    <label for="floatingInputInvalid">Dato inválido</label>
+                </form>
+                  <!--Etiquetas de entrada con comentarios-->
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comentarios</label>
+                  </div>
+                   <!--Diseño de formularios /_Las librerías de boostrap nos permite reestructurar el diseño de los formularios -->
+                   <!--Diseño de formularios horizontales con md-->
+                    <!--Esto nos permite escribir de forma horizontal en un campo por completo-->
+                  <form>
+                    <div class="row mb-3">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email </label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3">
+                      </div>
+                    </div>
+                  </form>
+
+
             <!--Boton submit-->
             <!-- Este boton es esencial en un formulario, ya que es quien envía la informacion recolectada a la BD -->
             <button type="submit" class="btn btn-primary" onclick="click();">Submit</button>
+         
         </form>
     </div>
+
+            
+             
+
+
+      
 </body>
 <script src="js/darkmode.js"></script>
 

@@ -1,8 +1,5 @@
-function click(){
-    let datos = 
-    if( datos ){
-        alert("todos los campos fueron completados.");
-    } else {
-        alert("hacen falta campos por completar.");
-    }
-}
+const myModal = document.getElementById('#btnEnviar');
+
+myModal.addEventListener('click', () => {
+  alert("Fin de la presentacion");
+});

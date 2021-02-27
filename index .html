@@ -23,7 +23,7 @@
         </button>
     </header>
     <div class="formulario">
-        <form action="">
+        <form action="" name="formulario">
             <!--Areas de login-->
             <!--Esta area es usada comunmente para los login o formularios de ingreso de datos
             ya que solicita cierta informacion para registrar o ingresar.-->
@@ -84,86 +84,129 @@
                     Checkbox 4
                 </label>
             </div>
+            <!--Area radiobuttoms-->
+            <!--A diferencia de los check box, los radio buttoms solo permiten seleccionar un valor
+            ya que ellos venen en un grupo de botones-->
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="g1" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Radio 1 - grupo1.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="g1" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Radio 2 - grupo 1.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="g2" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Radio 1 - Grupo 2.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="g2" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Radio 2 - Grupo 2.
+                </label>
+            </div>
+            <!--Range-->
+            <!--Sirve para ingresar el rango de algo-->
+            <label for="customRange1" class="form-label">Rango normal</label>
+            <input type="range" class="form-range" id="customRange1">
 
-             <!--Range-->
-             <!--Sirve para indicar el progreso de algo-->
-             <label for="customRange1" class="form-label">Example range</label>
-             <input type="range" class="form-range" id="customRange1">
+            <!--Rango bloqueado de tipo disabled-->
+            <label for="disabledRange" class="form-label">Rango deshabilitado</label>
+            <input type="range" class="form-range" id="disabledRange" disabled>
 
-              <!--Rango bloqueado de tipo disabled-->
-              <label for="disabledRange" class="form-label">Disabled range</label>
-              <input type="range" class="form-range" id="disabledRange" disabled>
-
-             <!--Rango con valores min y mas (0 a 100) o (0 a 5)-->
-              <label for="customRange2" class="form-label">Example range</label>
-              <input type="range" class="form-range" min="0" max="5" id="customRange2">
+            <!--Rango con valores min y mas (0 a 100) o (0 a 5)-->
+            <label for="customRange2" class="form-label">Rango min y max</label>
+            <input type="range" class="form-range" min="0" max="5" id="customRange2">
 
 
-              <!--Grupos de entrada -->
-              <!--Son contenedores que ayudan a comprender mejor la entrada de los campos de un formulario , agregandoiconos,textos,etc-->
-              <div class="input-group mb-3">
+            <!--Grupos de entrada -->
+            <!--Son contenedores que ayudan a comprender mejor la entrada de los campos de un formulario , agregandoiconos,textos,etc-->
+            <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">$</span>
-                <input type="text" class="form-control" placeholder="Ingrese el precio del producto que desea vender" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-              
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Ingrese un correo externo de contacto" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
-              </div>
-              
-              <label for="basic-url" class="form-label">Ingresa una URL de tu sitio web</label>
-              <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="number" class="form-control" placeholder="Ingrese el precio del producto que desea vender"
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ingrese un correo externo de contacto"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
+            </div>
+
+            <label for="basic-url" class="form-label">Ingresa una URL de tu sitio web</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://ejemplo.com/users/</span>
                 <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-              </div>
+            </div>
 
             <!--Etiquetas de entrada -->
-              <!--Las etiquetas de entrada brindan una mejor interacción con cada campo a la hora de que el usuario vaya a ingresar un valor-->
-              <div class="form-floating mb-3">
+            <!--Las etiquetas de entrada brindan una mejor interacción con cada campo a la hora de que el usuario vaya a ingresar un valor-->
+            <div class="form-floating mb-3">
                 <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese Nombre y apellidos">
                 <label for="floatingInput">Nombre y Apellidos</label>
+            </div>
+            <!--Etiquetas de entrada con validación de datos-->
+
+            <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com"
+                value="test@ejemplo.com">
+            <label for="floatingInputInvalid">Dato inválido</label>
+
+            <!--Etiquetas de entrada con comentarios-->
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comentarios</label>
+            </div>
+            <!--Diseño de formularios /_Las librerías de boostrap nos permite reestructurar el diseño de los formularios -->
+            <!--Diseño de formularios horizontales con md-->
+            <!--Esto nos permite escribir de forma horizontal en un campo por completo-->
+
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email </label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
                 </div>
-               <!--Etiquetas de entrada con validación de datos-->
-                <form class="form-floating">
-                    <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
-                    <label for="floatingInputInvalid">Dato inválido</label>
-                </form>
-                  <!--Etiquetas de entrada con comentarios-->
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Comentarios</label>
-                  </div>
-                   <!--Diseño de formularios /_Las librerías de boostrap nos permite reestructurar el diseño de los formularios -->
-                   <!--Diseño de formularios horizontales con md-->
-                    <!--Esto nos permite escribir de forma horizontal en un campo por completo-->
-                  <form>
-                    <div class="row mb-3">
-                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email </label>
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3">
-                      </div>
-                    </div>
-                    <div class="row mb-3">
-                      <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
-                      <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3">
-                      </div>
-                    </div>
-                  </form>
-
-
+            </div>
+            <div class="row mb-3 ultimo">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                </div>
+            </div>
             <!--Boton submit-->
             <!-- Este boton es esencial en un formulario, ya que es quien envía la informacion recolectada a la BD -->
-            <button type="submit" class="btn btn-primary" onclick="click();">Submit</button>
-         
+            <button id="btnEnviar" type="submit" class="btn btn-primary" onclick="alert('Fin de la presentacion');">Enviar</button>
+        
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </form>
     </div>
 
-            
-             
 
 
-      
+
+
+
 </body>
 <script src="js/darkmode.js"></script>
 
